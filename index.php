@@ -254,31 +254,31 @@
                     <div id="detailsSection" style="display: none">
                         <lable for="name">Name:</lable>
                         <br>
-                        <input type="text" id="name" name="name" placeholder="Name">
+                        <input type="text" id="S_name" name="S_name" placeholder="Name">
                         <br>
                         <lable for="phone">Phone Number:</lable>
                         <br>
-                        <input type="tel" id="phone" name="phone" placeholder="Phone">
+                        <input type="tel" id="S_phone" name="S_phone" placeholder="Phone">
                         <br>
                         <lable for="age">Age:</lable>
                         <br>
-                        <input type="number" name="age" id="age" placeholder="Age">
+                        <input type="number" name="S_age" id="S_age" placeholder="Age">
                         <br>
                         <lable for="Gender">Gender:</lable>
                         <br>
-                        <input type="text" name="Gender" id="Gender" placeholder="Gender">
+                        <input type="text" name="S_Gender" id="S_Gender" placeholder="Gender">
                         <br>
                         <lable for="state">State:</lable>
                         <br>
-                        <input type="text" name="State" id="State" placeholder="State">
+                        <input type="text" name="S_State" id="S_State" placeholder="State">
                         <br>
                         <lable for="occ">Occupation:</lable>
                         <br>
-                        <input type="text" name="Occuaption" id="Occuaption" placeholder="Occuaption">
+                        <input type="text" name="S_Occuaption" id="S_Occuaption" placeholder="Occuaption">
                         <br>
                         <lable for="nat">Nationality:</lable>
                         <br>
-                        <input type="text" name="Nationality" id="Nationality" placeholder="Nationality">
+                        <input type="text" name="S_Nationality" id="S_Nationality" placeholder="Nationality">
 
                     </div>
 
