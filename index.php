@@ -88,7 +88,7 @@
 </head>
 
 <body>
-    <form action="connect_f.php" method="POST">
+    <form action="conect_f.php" method="POST">
         <table>
 
             <tr class="row">
@@ -111,14 +111,14 @@
             <tr>
 
                 <td class="td2">
-                    <lable>
+                    <label>
                         <input type="text" name="firstname" id="firstname" placeholder="First Name">
-                    </lable>
+                    </label>
                 </td>
                 <td class="td2">
-                    <lable>
+                    <label>
                         <input type="text" name="lastname" id="lastname" placeholder="Last Name">
-                    </lable>
+                    </label>
                 </td>
 
             </tr>
@@ -132,14 +132,14 @@
             <tr>
                 <td class="td2">
 
-                    <lable>
+                    <label>
                         <input type="number" name="a" id="a" placeholder="Age">
-                    </lable>
+                    </label>
                 </td>
                 <td class="td2">
-                    <lable>
+                    <label>
                         <input type="text" name="g" id="g" placeholder="Gender">
-                    </lable>
+                    </label>
                 </td>
             </tr>
 
@@ -153,15 +153,15 @@
             </tr>
             <tr>
                 <td class="td2">
-                    <lable>
+                    <label>
                         <input type="text" name="s" id="s" placeholder="State">
-                    </lable>
+                    </label>
                 </td>
                 <td class="td2">
-                    <lable>
+                    <label>
 
                         <input type="text" name="ph" id="ph" maxlength="10" placeholder="Enter phone number">
-                    </lable>
+                    </label>
                 </td>
             </tr>
             <tr>
@@ -174,14 +174,14 @@
             </tr>
             <tr>
                 <td class="td2">
-                    <lable>
+                    <label>
                         <input type="text" name="oc" id="oc" placeholder="Occupation">
-                    </lable>
+                    </label>
                 </td>
                 <td>
-                    <lable>
+                    <label>
                         <input type="text" name="na" id="na" placeholder="Nationality">
-                    </lable>
+                    </label>
                 </td>
             </tr>
 
@@ -195,15 +195,22 @@
             </tr>
             <tr>
                 <td>
-                    <lable>
-                        <input type="text" name="DOF" id="DOF" placeholder="DOF">
-                    </lable>
+                    <label>
+                        <input type="date" name="DOF" id="DOF" placeholder="DOF">
+                    </label>
                 </td>
                 <td>
-                    <lable>
-                        <input type="text" name="Stolen date" id="Stolen date" placeholder="Stolen Date">
-                    </lable>
+                    <label>
+                        <input type="date" name="Stolen_date" id="Stolen date" placeholder="Stolen Date">
+                    </label>
                 </td>
+                
+                <!-- <td>
+                <label>
+                        <input type="text" name="Stolen_time" id="Stolen time" placeholder="Stolen time">
+                    </label>
+                </td> -->
+
             </tr>
             <tr>
                 <td class="align">
@@ -240,7 +247,7 @@
             <tr>
                 <td class="al td2">
 
-                    <input type="checkbox" id="showDetails">Having a suspect
+                    <input type="checkbox" id="showDetails" name="checkbox">Having a suspect
 
 
 
@@ -252,42 +259,43 @@
             <tr>
                 <td class="td3">
                     <div id="detailsSection" style="display: none">
-                        <lable for="name">Name:</lable>
+                        <label for="name">Name:</label>
                         <br>
                         <input type="text" id="S_name" name="S_name" placeholder="Name">
                         <br>
-                        <lable for="phone">Phone Number:</lable>
+                        <label for="phone">Phone Number:</label>
                         <br>
                         <input type="tel" id="S_phone" name="S_phone" placeholder="Phone">
                         <br>
-                        <lable for="age">Age:</lable>
+                        <label for="age">Age:</label>
                         <br>
                         <input type="number" name="S_age" id="S_age" placeholder="Age">
                         <br>
-                        <lable for="Gender">Gender:</lable>
+                        <label for="Gender">Gender:</label>
                         <br>
                         <input type="text" name="S_Gender" id="S_Gender" placeholder="Gender">
                         <br>
-                        <lable for="state">State:</lable>
+                        <label for="state">State:</label>
                         <br>
                         <input type="text" name="S_State" id="S_State" placeholder="State">
                         <br>
-                        <lable for="occ">Occupation:</lable>
+                        <label for="occ">Occupation:</label>
                         <br>
                         <input type="text" name="S_Occuaption" id="S_Occuaption" placeholder="Occuaption">
                         <br>
-                        <lable for="nat">Nationality:</lable>
+                        <label for="nat">Nationality:</label>
                         <br>
                         <input type="text" name="S_Nationality" id="S_Nationality" placeholder="Nationality">
 
                     </div>
+                    
 
                 </td>
             </tr>
             <tr class="row">
                 <td colspan="30">
-                    <input type="reset" value="reset">
-                    <input type="submit" value="submit">
+                    <input type="reset" value="reset" name = "reset">
+                    <input type="submit" value="submit" name = "submit">
 
                 </td>
             </tr>
