@@ -170,7 +170,7 @@ if ($result4->num_rows > 0) {
                 <th>State</th>
                 <th>Occupation</th>
                 <th>Nationality</th>
-                <th>R_id</th>
+             
 
             </tr>";
 
@@ -184,7 +184,7 @@ if ($result4->num_rows > 0) {
                 <td>" . $row["S_state"] . "</td>
                 <td>" . $row["S_occupation"] . "</td>
                 <td>" . $row["S_nationality"] . "</td>
-                <td>" . $row["R_id"] . "</td>
+                
                 </tr>";
     }
 
