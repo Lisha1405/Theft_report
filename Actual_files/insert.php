@@ -7,12 +7,15 @@
             display: grid;
             justify-content: center;
             align-items: center;
+            
             background-image: url("https://i.pinimg.com/564x/e2/bd/9d/e2bd9d02fe736ac633db47c7b57ced35.jpg");
             background-repeat: no-repeat;
             background-size: cover;
             height: 100vh;
             margin: 0;
             box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.2);
+            padding-top: 80px;
+            margin-top: -80px;
         }
 
         table {
@@ -41,41 +44,47 @@
             background-color: rgba(255, 230, 170, 0.7);
         }
 
-        a:link,
+        /* a:link,
         a:visited {
-            background-color: orange;
+            background-color: black;
             color: white;
-            padding: 14px 25px;
+            padding: 7px 13px;
             text-align: center;
             text-decoration: none;
             display: inline-block;
-        }
+        } */
 
-        a:hover,
-        a:active {
+        
+        /* a:active {
             background-color: rgb(70, 150, 140);
             float: right;
-        }
+        } */
 
-        .a1:link,
+        /* .a1:link,
         .a1:visited {
             background-color: #fa1f1f;
             color: white;
-            padding: 14px 25px;
+            padding: 3px 10px;
             text-align: center;
             text-decoration: none;
             display: inline-block;
-        }
+            transition: .5s;
+            
+        } */
 
-        .a1:hover,
+        /* .a1:hover,
         .a1:active {
             background-color: white;
-            float: right;
-        }
+            float: right;*/
+        
+
     </style>
 </head>
-
+<?php
+include "navbar.html";
+?>
 <body>
+
     <form action="conect_f.php" method="POST" onsubmit="return validateForm()">
         <table>
             <tr class="row">
