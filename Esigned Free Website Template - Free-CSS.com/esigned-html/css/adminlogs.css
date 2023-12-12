@@ -1,0 +1,71 @@
+@import url(https://fonts.googleapis.com/css?family=Lato);
+body{
+	margin: 0;
+	padding: 0;
+}
+
+nav{
+	display: grid;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+}
+
+.nav1{
+	background: linear-gradient(135deg, #f8b195, #ff7b29, #ff5e2d, #6c5b7b);
+}
+
+nav ul{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+nav ul li{
+	position: relative;
+	float: left;
+	border: 2px solid;
+}
+
+nav ul li:not(:first-child){
+	border-left: none;
+}
+
+nav ul li:hover{
+	background-color: rgba(255, 255, 255, .3);
+}
+
+nav ul li a{
+	display: inline-block;
+	padding: 16px 64px;
+	font-family: 'Lato' , sans-serif;
+	font-weight: 500;
+	font-size: 20px;
+	color: #000;
+	text-align: center;
+	text-decoration: none;
+}
+
+nav ul ul{
+	position: absolute;
+	top: 100%;
+	left: -2px;
+}
+
+nav ul ul li{
+	float: none;
+	margin: 0;
+}
+
+nav ul ul li:not(:first-child){
+   border: 2px solid #000;
+   border-top: none;
+}
+
+.nav1 ul ul{
+	display: none;
+}
+
+.nav1 ul li:hover > ul{
+	display: block;
+}   
