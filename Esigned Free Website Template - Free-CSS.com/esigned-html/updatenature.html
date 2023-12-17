@@ -1,0 +1,63 @@
+<html>
+<head>
+    <link rel="stylesheet" href="css\adminlogs.css">
+    <style>
+        .de{
+            display: inline-flex;
+
+        }
+        input {
+            border: none;
+            background-color: transparent;
+            outline: none; /* Remove the focus outline (optional) */
+            font-size: 20px;
+        }
+
+        /* Optional: Adding some margin to the input */
+        li input {
+            margin-right: 10px;
+            
+        }
+        .cl{
+            border: none;
+            background-color: transparent;
+            outline: none; /* Remove the focus outline (optional) */
+            font-size: 20px;
+
+            
+            
+        }
+       
+        
+        
+    </style>
+</head>
+
+<nav class="nav1">
+    <form action="NatureOfProperty.php" method="POST" >
+        <div class="de">
+            
+                <ul>
+                    <li><input type="text" id="id" name="id" ><a href="#"><pre>Enter ID</pre></a></li>
+                
+                    <li><input type="text" id="name" name="name" ><a href="#"><pre>Enter Name</pre></a></li>
+                
+                    <li><input type="text" id="color" name="color" ><a href="#"><pre>Enter Color</pre></a></li>
+                
+                    <li><input type="text" id="number" name="number"><a href="#"><pre>              Enter number of items</pre></a></li>
+                    <li><input type="text" id="value" name="value"><a href="#"><pre>  Enter the cumulative amount </pre></a></li>
+                </ul>
+                
+       
+        </div>
+    
+    
+    <ul>
+        <li class="p">
+            <input type="submit" value="Submit" name="submit" required>
+        </li>
+    </ul>
+</form>   
+</nav>
+
+</html>

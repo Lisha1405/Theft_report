@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/adminlogs.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Resetting default styles for input */
+        input {
+            border: none;
+            background-color: transparent;
+            outline: none;
+            /* Remove the focus outline (optional) */
+            font-size: 15px;
+
+        }
+
+        select {
+            border: none;
+            background-color: transparent;
+            outline: none;
+            font-size: 15px;
+
+        }
+
+        /* Optional: Adding some margin to the input */
+        li input {
+            margin-right: 10px;
+
+        }
+
+        nav {
+            background-color: #333;
+            color: rgb(0, 0, 0);
+            padding: 10px;
+            text-align: center;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        li {
+            margin-bottom: 10px;
+        }
+
+
+
+        select {
+            padding: 21px;
+
+            border: 1px solid #000000;
+        }
+
+        .cl {
+            border: none;
+            background-color: transparent;
+            outline: none;
+            /* Remove the focus outline (optional) */
+            font-size: 20px;
+
+
+
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="nav1">
+        <form action="delete.php" method="POST" onsubmit="return validateForm();">
+            <ul>
+                <li>
+                    <input type="text" id="delid" name="delid">
+                    <pre>Enter row number</pre>
+                </li>
+                <!-- <br><br><br><br><br><br><br> -->
+                <li>
+                    <select id="deltable" name="deltable">
+                        <option value="nature_of_property">nature_of_property</option>
+                        <option value="report">report</option>
+                        <option value="suspect">suspect</option>
+                        <option value="victim">victim</option>
+                    </select>
+                </li>
+                <li>
+                    <select id="delidcol" name="delidcol">
+                        <option value="N_id">N_id</option>
+                        <option value="R_id">R_id</option>
+                        <option value="V_id">V_id</option>
+                        <option value="S_id">S_id</option>
+                    </select>
+                </li>
+            </ul>
+
+            <ul>
+                <li>
+                    <input type="submit" value="submit" name="submit" required>
+                </li>
+            </ul>
+        </form>
+    </nav>
+
+    <script>
+        function validateForm() {
+            var rowNumber = document.getElementById("delid").value;
+
+            // Check if rowNumber is a positive integer
+            if (!/^\d+$/.test(rowNumber) || rowNumber <= 0) {
+                alert("Please enter a valid positive integer for Row Number.");
+                return false;
+            }
+
+            // You can add more validation for other fields if needed
+
+            return true; // Submit the form if all validations pass
+        }
+    </script>
+</body>
+
+</html>

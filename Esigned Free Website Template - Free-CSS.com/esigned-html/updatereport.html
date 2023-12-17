@@ -1,0 +1,67 @@
+<html>
+<head>
+
+    <link rel="stylesheet" href="css\adminlogs.css">
+    <style>
+        .de{
+            display: inline-flex;
+
+        }
+        input {
+            border: none;
+            background-color: transparent;
+            outline: none; /* Remove the focus outline (optional) */
+            font-size: 20px;
+        }
+
+        /* Optional: Adding some margin to the input */
+        li input {
+            margin-right: 10px;
+            
+        }
+        .cl{
+            border: none;
+            background-color: transparent;
+            outline: none; /* Remove the focus outline (optional) */
+            font-size: 20px;
+
+            
+            
+        }
+        
+        
+    </style>
+</head>
+
+<nav class="nav1">
+  
+    <form action="Report.php" method="POST" >   
+        <div class="de">
+            
+                <ul>
+                    <li><input type="text" id="id" name-="id" ><a href="#"><pre>Enter ID</pre></a></li>
+                
+                    <li><input type="text" id="dof" name="dof" ><a href="#"><pre>Enter DOF</pre></a></li>
+                
+                    <li><input type="text" id="status" name="status" ><a href="#"><pre>Enter STATUS</pre></a></li>
+                
+                    <li><input type="text" id="stolen_date" name="stolen_date"><a href="#"><pre>Enter Stolen date</pre></a></li>
+                    <li><input type="text" id="stolen_time" name="stolen_time"><a href="#"><pre>Enter Stolen time</pre></a></li>
+                </ul>
+                
+       
+        </div>
+        
+    
+   
+
+    </ul>
+    <ul>
+        <li class="p">
+            <input type="submit" value="submit" name="submit" required>
+        </li>
+    </ul>
+</form>
+</nav>
+
+</html>

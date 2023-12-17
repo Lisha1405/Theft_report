@@ -1,7 +1,7 @@
 
 
 <?php
- 
+ include 'navbar.html';
 if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['submit'])) {
     $conn = mysqli_connect('localhost', 'root', '', 'property_stolen') or die("Connection failed: " . mysqli_connect_error());
     
@@ -80,7 +80,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['submit'])) {
  
     $primaryKey1 = $R_id ;
 
-    echo  $primaryKey1;
+    // echo  $primaryKey1;
      // Replace with the actual primary key for Table1
      $primaryKey2 = $S_id; // Replace with the actual primary key for Table2
      $primaryKey3 = $N_id; // Replace with the actual primary key for Table3
